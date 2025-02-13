@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Casa Patrones</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Casa Patrones Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">El hotel</a></li>
+                <li><a href="room.html">Habitaciones</a></li>
+                <li><a href="#">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <section class="hero-slider">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('img/slider1.jpg');">
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <h2>Bienvenido a Casa Patrones</h2>
+                    <p>Un nuevo y elegante alojamiento en el corazón de Chiclayo.</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/slider2.jpg');">
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <h2>Disfruta de nuestra hospitalidad</h2>
+                    <p>¡Te recibiremos como un amigo!</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('img/slider3.jpg');">
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <h2>Reserva ahora</h2>
+                    <p>Encuentra la habitación perfecta para tu estadía.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de búsqueda -->
+        <div class="search-form">
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="check-in">Entrada</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Salida</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+                <div class="form-group">
+                    <label for="adults">Adultos</label>
+                    <select id="adults" name="adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="children">Niños</label>
+                    <select id="children" name="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="img/hotel.jpg" alt="Casa Patrones">
+            </div>
+            <div class="about-content">
+                <h2>Casa Patrones</h2>
+                <p>CASA PATRONES combina un rigor modernista con materiales históricos. Su diseño representa la grandeza de la casa sobre la que fue construido el alojamiento y el minimalismo de sus interiores, crea una identidad visual moderna que guarda en su interior años de vida en el corazón de Chiclayo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <h2>Ubicación del Hotel</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2801.5313274334762!2d-79.84041225364261!3d-6.774285142504927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef288e422331%3A0xec40009eec18ed2f!2sFrancisco%20Cabrera%20424%2C%20Chiclayo%2014001!5e0!3m2!1ses-419!2spe!4v1739329889006!5m2!1ses-419!2spe" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Av. Francisco Cabrera 424</p>
+            <p>Chiclayo, Perú | 971 021 682</p>
+            <div class="social-icons">
+                <a href="https://www.tripadvisor.com.pe/Hotel_Review-g298439-d20053597-Reviews-Casa_Patrones-Chiclayo_Lambayeque_Region.html" class="social-icon"><img src="img/icons8-tripadvisor-24.png" alt="TripAdvisor"></a>
+                <a href="https://www.facebook.com/casapatroneshotel/" class="social-icon"><img src="img/icons8-facebook-logo-24.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/casapatrones/" class="social-icon"><img src="img/icons8-instagram-24.png" alt="Instagram"></a>
+            </div>
+            <button class="contact-btn">Contáctanos</button>
+            <p class="copyright">© 2022 Casa Patrones</p>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

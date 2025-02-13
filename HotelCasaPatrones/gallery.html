@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Casa Patrones</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/gallery.css"><!-- Asegúrate de enlazar tu CSS -->
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Casa Patrones Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">El hotel</a></li>
+                <li><a href="room.html">Habitaciones</a></li>
+                <li><a href="#">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENEDOR DE GALERÍA -->
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="img/img1.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img2.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img3.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img4.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img5.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img6.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img7.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img8.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img9.jpg" class="gallery-item">
+        </div>
+        <div class="gallery">
+            <img src="img/img10.jpg" class="gallery-item">
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Av. Francisco Cabrera 424</p>
+            <p>Chiclayo, Perú | 971 021 682</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="img/icons8-tripadvisor-24.png" alt="TripAdvisor"></a>
+                <a href="#" class="social-icon"><img src="img/icons8-facebook-logo-24.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="img/icons8-instagram-24.png" alt="Instagram"></a>
+            </div>
+            <button class="contact-btn">Contáctanos</button>
+            <p class="copyright">© 2022 Casa Patrones</p>
+        </div>
+    </footer>
+
+    <!-- MODAL PARA VER IMÁGENES EN GRANDE -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div class="prev" onclick="changeImage(-1)">&#10094;</div>
+    <div class="next" onclick="changeImage(1)">&#10095;</div>
+</div>
+
+<script src="js/gallery.js"></script>
+</body>
+</html>

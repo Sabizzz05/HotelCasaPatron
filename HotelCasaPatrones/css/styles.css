@@ -1,0 +1,338 @@
+/* Estilos globales */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------- */
+/* Estilos del slider */
+/* -------------------------- */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Se adapta al 90% de la altura del viewport */
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0; /* Oculta todas las imágenes por defecto */
+}
+
+.slide:first-child {
+    opacity: 1; /* Muestra la primera imagen */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* -------------------------- */
+/* Estilos del formulario de búsqueda */
+/* -------------------------- */
+.search-form {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    height: 40px;
+    padding: 5px 15px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.search-form button:hover {
+    background: #555;
+}
+
+/* -------------------------- */
+/* Estilos de la sección About */
+/* -------------------------- */
+.about-section {
+    padding: 80px 20px;
+    background-color: #f5e7d3; /* Beige suave */
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 450px; /* Tamaño máximo controlado */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 1;
+    text-align: justify;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* -------------------------- */
+/* Estilos del Nav (cabecera) */
+/* -------------------------- */
+nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    padding: 10px 20px;
+    background: #ffffff;
+    gap: 60px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #685121;
+}
+
+.reserva-btn {
+    background: #002b1c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* -------------------------- */
+/* Estilos del Mapa */
+/* -------------------------- */
+.map-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5e7d3;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------- */
+/* Estilos del Footer */
+/* -------------------------- */
+.footer {
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: black;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icon img {
+    width: 30px;  /* Tamaño de los íconos */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+.contact-btn {
+    background: rgb(79, 68, 68);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #8b8383;
+    color: white;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* -------------------------- */
+/* MEDIA QUERIES PARA RESPONSIVIDAD */
+/* -------------------------- */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Ajusta la cabecera: menú en columna */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+    
+    /* Formulario de búsqueda más compacto */
+    .search-form {
+        bottom: 20px;
+        width: 90%;
+        padding: 10px;
+    }
+    
+    /* Sección About en columna */
+    .about-section {
+        padding: 40px 10px;
+    }
+    .about-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Ajuste del mapa */
+    .map-container {
+        width: 100%;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+
